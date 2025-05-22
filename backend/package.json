@@ -1,0 +1,12 @@
+{
+  "name": "triply-v2",
+  "version": "1.0.0",
+  "description": "backend for triply app",
+  "license": "ISC",
+  "author": "saurabh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
