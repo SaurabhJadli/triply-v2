@@ -1,15 +1,29 @@
-import Header from "../components/Header";
+import React from 'react';
+import Header from '../components/Header.jsx'
+import Cards from '../components/Card.jsx'
+import { data } from '../data.js'
+import Footer from '../components/Footer.jsx'
 
-import React from 'react'
+export default function Home() {
 
-const Home = () => {
-  return (
-    <>
-    <Header />
-    <div>Home</div>
+    const mappedData = data.map((item) => {
+        return(
+            <Cards key={item.id} item={item} />
+        )
+    })
 
-    </>
-  )
-}
+	
+	return (
+		
+		<div>
+            <Header />
 
-export default Home
+            <br /><br /> <br /> 
+            <div className='homeCards'>
+            {mappedData}
+            </div>
+
+            <Footer />
+            </div>
+    )
+};

@@ -8,6 +8,7 @@ import About from './pages/About.jsx'
 import Plan from './pages/Plain.jsx'
 import CurrencyConverter from './pages/CurrencyConverter.jsx'
 import CountryInfo from './pages/CountryInfo.jsx'
+import SearchResult from './pages/SearchResult.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -22,7 +23,7 @@ createRoot(document.getElementById('root')).render(
   <Route path="/countryInfo" element={<CountryInfo />} />
   <Route path="/about" element={<About />} />
   <Route path="/contact" element={<Contact />} />
-  <Route path="/searchResult" element={<App />} />
+  <Route path="/searchResult" element={<SearchResult />} />
   <Route path="/logout" element={<App />} />
   <Route path="/login" element={<App />} />
   <Route path="/register" element={<App />} />
