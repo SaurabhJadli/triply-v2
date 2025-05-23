@@ -1,42 +1,455 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+/* signUp / Regist.. */
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+.regi {
+    padding-left: 35%;
+    padding-right: 35%;
+    margin-top: 2%;
+    }
+    
+    @media (min-width: 320px) and (max-width: 480px) {
+    .regi {
+    padding-left: 10%;
+    padding-right: 10%;   
+     }
+      }
+    
+    .regiP{
+        color: rgba(31, 14, 14, 0.918);
+        font-size: medium;
+        margin-top: .3rem;
+    }
+    
+    .login {
+        
+    padding-left: 35%;
+    padding-right: 35%;
+    margin-top: 2%;
+    }
+    
+    @media (min-width: 320px) and (max-width: 480px) {
+        .login {
+    margin-top: 0%;
+    padding-left: 10%;
+    padding-right: 10%;   
+     }
+    
+     .login_logo {
+        height: 10rem;
+        width: 10rem;
+     }
+      }
+    
+    .loginLink {
+        color: blueviolet;
+        text-decoration: none;
+    }
+    
+    .loginLink:hover {
+        color: red;
+    }
+    
+    /* logIn  */
+    
+    .submitBtn {
+        color: snow;
+        text-decoration: none;
+    
+    }
+    .submitBtn:hover {
+        color: snow;
+    }
+    
+    /* Home.css*/
+    
+    * {
+        box-sizing: border-box;
+        }
+        
+        body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100%;
+        
+        }
+        
+        a {
+        color: #d74180;
+        font-size: 16px;
+        }
+        
+        a:hover{
+        color: #808080;
+        }
+        
+        section {
+        padding: 20px;
+        }
+        
+        .para {
+        font-size: 16px;
+        }
+        
+        h4, p {
+        padding-bottom:5px;
+        margin: 0;
+        }
+    
+        .desc {
+            color: black;
+            font-size:large;
+    
+        }
+        
+        .logoTitle {
+            color: snow;
+        }
+    
+        .logoTitle:hover {
+            color: snow;
+        }
+    
+        .nav-manu{
+            margin-bottom: 5rem;
+        }
+        .nav-color {
+            background-color: #d74180;
+    
+        }
+    
+        @media (min-width: 320px) and (max-width: 480px) {
+    
+        .scrollHeight{
+            height: 200px;
+            overflow-x: auto; /* Enable horizontal scrolling */
+        }
+    }
+    
+    @media (min-width: 320px) and (max-width: 480px) {
+    .breakLn{
+    white-space:nowrap ;
+    white-space:pre ;
+    }
+    }
+    
+    .category-img {
+        height: 3rem;
+        width: 3rem;
+        margin-right: 2%;
+    }
+    
+       
+        .title {
+            font-weight: 600;
+            text-align: left;
+            margin-right: 30rem;
+            
+            }
+    
+    
+        .headLogo{
+            height: 2rem;
+            width: 2rem;
+            display:inline-block;
+            
+        }
+    
+        .options:hover {
+            box-shadow:midnightblue;
+            color: red;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+    
+        }
+        
+        /* .material-symbols-outlined {
+        font-variation-settings:
+            'wght' 200,
+            'GRAD' 20,
+            'opsz' 24,
+        } */
+    
+    
+        .homeCards{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .card-style {
+            width: 100%;
+        }
+    
+        .card-style:hover {
+            border-color: #d74180;
+            border-width: .3rem;
+            border-style: solid;
+            box-shadow: 3px 2px 10px 7px rgba(145, 17, 102, 0.1);
+        }
+        
+        .card-img {
+        
+        min-width: 250px;
+        max-width: 500px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        }
+        
+        .title {
+            color: forestgreen;
+            font-size:xx-large;
+        }
+    
+        .material-symbols-outlined {
+            margin-right: .5rem;
+            font-size:small;
+        }
+    
+        .ReadMore {
+            font-size: medium;
+        }
+        
+       
+        .journal-footer {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: #5a595a;
+        height: 130px;
+        margin-top: 10rem;
+        clear: both;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        border-radius: 3px;
+        }
+        
+        .footer-caption {
+        padding-left: 5px;
+        }
+        
+        /* For mobile phones: */
+        [class*="card-"] {
+        width: 100%;
+        flex-direction: column;
+        
+        }
+        
+        /* media queries */
+        
+    
+        /* Plan page */
+        .plan {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        
+        /* About */
+    
+        
+    /* Todo app */
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.todo-container {
+    width: 60%;
+    height: 500px;
+    margin: 3rem auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background-color: #8279e4;
+  
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Style the header */
+  .todo-header {
+    padding: 10px;
+    color: white;
+    text-align: center;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  /* Clear floats after the header */
+  .todo-header:after {
+    content: "";
+    display: table;
+    clear: both;
   }
+  
+  .todo-h2 {
+    padding: 0.5rem;
+  }
+  
+  .todo-input {
+    border: solid 1px #19172e;
+    border-radius: 8px;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  .addBtn,.editBtn {
+    padding: 10px;
+    width: 22%;
+    background: #ffd662ff;
+    color: black;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 7px;
+  }
+  
+  .addBtn:hover {
+    background-color: #84af33;
+  }
+  
+  .todo-ul, .todo-li {
+    margin: 10px;
+    list-style-type: none;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #fff;
+    font-size: 18px;
+    border-radius: 3px;
+  }
+  
+  .todo-ul li.checked {
+    background-color: #1e8e3e;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  ul li.checked::before {
+    content: "";
+    position: absolute;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  .close {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px 16px 12px 16px;
+    background-color: #f44336;
+    border-radius: 5px;
+    color: white;
+    transition: 0.1s ease-in-out;
+  }
+  
+  .close:hover{
+      background-color: #cc382e;
+  }
+  
+  .edit {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 16px 12px 16px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+  }
+  
+  .edit:hover{
+      background-color: rgb(0, 111, 0);
+  }
+  
+  
+  
+  @media (max-width: 600px) {
+    .todo-container {
+      width: auto;
+    }
+  }
+  
+  @media(max-width:400px){
+    .val{
+      text-align: left;
+    }
+  }
+  #myUL {
+    /* increases these chnages in it.. */
+      max-height: 300px; 
+      overflow-y: auto;
+    }
+
+/* Currency Converter */
+
+.heading {
+	font-family: 'arial', cursive;
+	font-size: 35px;
 }
 
-.card {
-  padding: 2em;
+.container-manual {
+	height: auto;
+	width: 800px;
+	display: flex;
+	justify-content: space-around;
+	justify-content: center;
+	align-items: center;
+	align-items: center;
+	margin: auto
 }
 
-.read-the-docs {
-  color: #888;
+.Curr-input {
+	padding-left: 5px;
+	font-size: 20px;
+	height: 36px;
+	
 }
+
+.middle,
+.right {
+	width: 120px;
+}
+
+.switch {
+	padding: 5px;
+	background-color: rgb(226, 252, 184);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.result {
+	width: 100%;
+	padding-left: 30px;
+}
+
+.Curr-button {
+	width: 100px;
+	height: 30px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 15px;
+	border: 2px solid forestgreen;
+	background-color: rgb(226, 252, 184);
+	cursor: pointer;
+
+}
+
+.curr-p,
+.curr-h3,
+.curr-button,
+.switch {
+	color: forestgreen;
+}
+
+.curr-p {
+	font-size: 30px;
+}
+
+
+.curr-select {
+	width: 6rem;
+	display: flex;
+  }
+  
+  /* Currency Converter Over Here */
