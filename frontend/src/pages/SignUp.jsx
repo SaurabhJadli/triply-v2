@@ -58,8 +58,8 @@ export default function SignUp() {
                         id="outlined-basic"
                         label='Email'
                         type='email'
-                        name="email"
-                        variant="outlined"
+                        name='email'
+                        variant='outlined'
                         className='mb-3 w-100'
                         required
                     />
@@ -68,8 +68,8 @@ export default function SignUp() {
                         id="outlined-basic"
                         label='Password'
                         type='password'
-                        name="password"
-                        variant="outlined"
+                        name='password'
+                        variant='outlined'
                         className='mb-3 w-100'
                         required
                     />
@@ -78,8 +78,8 @@ export default function SignUp() {
                         id="outlined-basic"
                         label='Confirm Password'
                         type='password'
-                        name="confirmPassword"
-                        variant="outlined"
+                        name='confirmPassword'
+                        variant='outlined'
                         className='mb-4 w-100'
                         required
                     />
