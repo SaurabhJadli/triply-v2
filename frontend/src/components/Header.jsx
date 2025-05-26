@@ -10,6 +10,7 @@ import map from "../assets/logos/map.png";
 import about from "../assets/logos/about.png";
 import contact from "../assets/logos/contact.png";
 import logout from "../assets/logos/log-out.png";
+import { Button } from "@mui/material";
 
 export default function Header() {
 
@@ -22,7 +23,10 @@ export default function Header() {
 			<div className="container">
 			<nav className="navbar navbar-expand-lg nav-color  fixed-top" >
   <div className="container-fluid nav-color">
-  <Link to="/home" className="navbar-brand " ><h2 className="logoTitle">Triply</h2></Link>
+
+  <Link to="/home" className="navbar-brand " >
+  <Button title="Triply home"><h2 className="logoTitle">Triply</h2></Button>
+  </Link>
 
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -32,8 +36,11 @@ export default function Header() {
     <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll scrollHeight" >  
           <li className="nav-item">
 		<Link to="/plan" className="nav-link active" aria-current="page" >
+    <Button title="Plan your trip">
 		<img src={plan} alt="planLogo" className="headLogo" />
-			Plan trip</Link>
+			Plan trip
+    </Button>
+      </Link>
         </li>
 
 		

@@ -6,11 +6,10 @@ import Footer from "../components/Footer";
 
 export default function Plan() {
     return(
-        <div className="plan">
+        <div>
         <Header />
-        <h2>Hi, plan your trip here.</h2>
-
-        <hr/>
+        <h2 className='text-center mt-4'>Hi, plan your trip here.</h2>
+        <hr className="w-75 m-auto" />
 
       <Todo />
         <hr/>
