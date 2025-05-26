@@ -6,6 +6,26 @@ import triplyLogo from "../assets/logos/triply_logo.png"
 
 export default function LogIn() {
 
+    const handleLogin = async (e) => {
+        e.preventDefault()
+        const formData = {
+            email: e.target.email.value,
+            password: e.target.password.value
+        }
+        console.log(formData);
+
+        // Form Validation
+        if (formData.email.length > 120) {
+            alert('Email is too long')
+            return
+        }
+
+        if (formData.password.length < 6 || formData.password.length > 80) {
+            alert("Password must be between 6 and 80 characters long.")
+            return
+        }
+    }
+
     return (
         <div className='d-flex flex-column justify-content-center align-items-center'>
             <div className='container d-flex flex-column justify-content-center align-items-center m-5'>
@@ -18,9 +38,9 @@ export default function LogIn() {
 
                 <h1 className='text-primary'>LogIn here </h1>
                 <br />
-                <form action="">
+                <form onSubmit={handleLogin}>
                     <TextField
-                        id="outlined-basic"
+                        id="email"
                         label='Email'
                         type='email'
                         name="email"
@@ -30,7 +50,7 @@ export default function LogIn() {
                     />
 
                     <TextField
-                        id="outlined-basic"
+                        id="password"
                         label='Password'
                         type='password'
                         name="password"
@@ -43,7 +63,10 @@ export default function LogIn() {
                         type="submit"
                         className='w-100 mb-2'
                         variant="contained">
-                        <Link to="/home" className='submitBtn'>Log in</Link>
+                        <Link to="#" 
+                        className='submitBtn'>
+                        Log in
+                        </Link>
                     </Button>
                 </form>
 
