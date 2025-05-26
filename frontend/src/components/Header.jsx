@@ -20,12 +20,12 @@ export default function Header() {
 
 	return (
 		
-			<div className="container">
+			<div className="container mb-4">
 			<nav className="navbar navbar-expand-lg nav-color  fixed-top" >
   <div className="container-fluid nav-color">
 
   <Link to="/home" className="navbar-brand " >
-  <Button title="Triply home"><h2 className="logoTitle">Triply</h2></Button>
+  <Button title="Triply home"><h4 className="logoTitle">Triply</h4></Button>
   </Link>
 
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,8 +36,10 @@ export default function Header() {
     <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll scrollHeight" >  
           <li className="nav-item">
 		<Link to="/plan" className="nav-link active" aria-current="page" >
-    <Button title="Plan your trip">
-		<img src={plan} alt="planLogo" className="headLogo" />
+    <Button 
+    title="Plan your trip"
+    className="text-dark fs-6 p-2">
+		<img src={plan} alt="planLogo" className="headLogo mx-2" />
 			Plan trip
     </Button>
       </Link>
@@ -45,9 +47,9 @@ export default function Header() {
 
 		
         <li className="nav-item dropdown">
-		<button href="#" className="nav-link active dropdown-toggle" aria-current="page" data-bs-toggle="dropdown" aria-expanded="false">
-		<img src={category} alt="planLogo" className="headLogo" />
-		Category</button>
+		<Button className="nav-link active dropdown-toggle p-2" aria-current="page" data-bs-toggle="dropdown" aria-expanded="false">
+		<img src={category} alt="planLogo" className="headLogo mx-2" />
+		Category</Button>
 
     <ul className="dropdown-menu">
    
@@ -107,8 +109,10 @@ export default function Header() {
            
             <li><hr className="dropdown-divider" /></li>
 
-            <li><button className="dropdown-item" href="#">
-            <Link to="/searchResult" state={data} > <button type="button" className="btn btn-success me-2" onClick={() =>{
+            <li><button className="dropdown-item">
+            
+            <Link to="/searchResult" state={data} > 
+            <button type="button" className="btn btn-success me-2" onClick={() =>{
             data.st=("asia");}}>
             Asia</button></Link>
 
@@ -134,33 +138,64 @@ export default function Header() {
         </li>
 
         <li className="nav-item">
-		<Link to="/currency" className="nav-link" href="#">
-		<img src={currency} alt="currency convert" className="headLogo" />
-		Currency converter</Link>
+		<Link to="/currency" className="nav-link">
+    <Button
+    title="convert currency"
+    className="text-dark fs-6 p-2"
+    >
+		<img src={currency} alt="currency convert" className="headLogo mx-2" />
+		Currency Convert
+    </Button>
+    </Link>
         </li>
 
         <li className="nav-item">
 		<Link to="/countryInfo" className="nav-link">
-		<img src={map} alt="country info" className="headLogo" />
-		Country info</Link>
+       
+    <Button
+     title="get country info"
+    className="text-dark fs-6 p-2">
+		<img src={map} alt="country info" className="headLogo mx-2" />
+		Country info
+    </Button>
+    </Link>
         </li>
 
         <li className="nav-item">
-		<Link to="/about" className="nav-link" href="#">
-		<img src={about} alt="About" className="headLogo" />
-		About</Link>
+
+		<Link to="/about" className="nav-link">
+        <Button
+        title="about us"
+    className="text-dark fs-6 p-2"
+    >
+		<img src={about} alt="About" className="headLogo mx-2" />
+		About
+        </Button>
+    </Link>
         </li>
 
         <li className="nav-item">
-		<Link to="/contact" className="nav-link" href="#">
-		<img src={contact} alt="contact" className="headLogo" />
-		Contact</Link>
+		<Link to="/contact" className="nav-link">
+    <Button
+    title="contact us"
+    className="text-dark fs-6 p-2"
+    >
+		<img src={contact} alt="contact" className="headLogo mx-2" />
+		Contact
+    </Button>
+    </Link>
         </li>
 
         <li className="nav-item">
-		<Link to="/login" className="nav-link" href="#">
-		<img src={logout} alt="Logout" className="headLogo" />
-		log out</Link>
+		<Link to="/login" className="nav-link">
+    <Button
+    title="log out"
+    className="text-dark p-2"
+    >
+		<img src={logout} alt="Logout" className="headLogo mx-2" />
+		log out
+    </Button>
+    </Link>
         </li>
 
       </ul>
@@ -169,13 +204,11 @@ export default function Header() {
         <input className="form-control me-2" type="search" placeholder="Search" onChange={(e) =>{
           setSearchTerm(e.target.value);
         }} aria-label="Search" />
-     <Link to="/searchResult" state={data}> <button className="btn btn-outline-success bg-success text-white">Search</button></Link>
+     <Link to="/searchResult" state={data}> <Button className="btn btn-outline-success bg-success text-white rounded-2">Search</Button></Link>
       </form> 
     </div>
   </div>
 </nav>
-
-
 </div>
 	);
 
