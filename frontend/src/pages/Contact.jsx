@@ -1,7 +1,11 @@
 import React from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import contact from '../assets/connect.png'
+import connect from "../assets/connect.png"
+import contact from "../assets/logos/contact.png"
+import email from "../assets/logos/email.png"
+import address from "../assets/logos/address.png"
+import instagram from "../assets/logos/instagram.png"
 
 export default function Contact() {
     return(
@@ -11,7 +15,7 @@ export default function Contact() {
               <div style={styles.container}>
               <div className="bg-primary-subtle rounded p-3">
               <h1>Explore the World with Triply</h1>
-              <img src={contact} className="img-fluid rounded" alt="road from forest"></img>
+              <img src={connect} className="img-fluid rounded" alt="road from forest"></img>
 <br /><br />
                 <h3>Discover new travel destinations, plan your next adventure, and connect with fellow explorers.</h3>
               </div>
@@ -29,7 +33,7 @@ export default function Contact() {
                 </li>
 
                 <li className="m-4">
-                <img src="/img/email.png" className=" img-fluid category-img" alt="email logo" />
+                <img src={email} className=" img-fluid category-img" alt="email logo" />
 
                     <h3>
                     Email</h3>
@@ -37,14 +41,14 @@ export default function Contact() {
                 </li>
 
                 <li className="m-4">
-                <img src="/img/address.png" className="img-fluid category-img" alt="address logo" />
+                <img src={address} className="img-fluid category-img" alt="address logo" />
 
                     <h3>Address</h3>
                     <h4>123 Main St, Anytown India</h4>
                 </li>
 
                 <li className="m-4">
-                <img src="/img/instagram.png" className="rounded-circle img-fluid category-img" alt="instagram logo" />
+                <img src={instagram} className="rounded-circle img-fluid category-img" alt="instagram logo" />
 
                     <h3>Social Media</h3>
                     <h4>@triplytravel</h4>
