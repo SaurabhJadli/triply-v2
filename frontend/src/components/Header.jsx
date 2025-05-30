@@ -12,6 +12,17 @@ import contact from "../assets/logos/contact.png";
 import logout from "../assets/logos/log-out.png";
 import { Button } from "@mui/material";
 
+// Category logos
+import nationalPark from "../assets/logos/national-park.png";
+import beach from "../assets/logos/beach.png";
+import hillStation from "../assets/logos/mountains.png";
+import island from "../assets/logos/island.png";
+import city from "../assets/logos/city.png";
+import ancient from "../assets/logos/ancient.png";
+import religious from "../assets/logos/religious.png";
+import deserts from "../assets/logos/desert.png";
+import snow from "../assets/logos/snowman.png";
+
 export default function Header() {
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -53,58 +64,58 @@ export default function Header() {
 
     <ul className="dropdown-menu">
    
-            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" href="#"  onClick={() =>{
+            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" onClick={() =>{
          data.st=("NationalPark");
         }}>
-            <img src="/img/national-park.png" className="rounded-circle img-fluid category-img" alt="national_park" />
+            <img src={nationalPark} className="rounded-circle img-fluid category-img" alt="national_park" />
             National Parks</Link></li>
 
-            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" href="#"  onClick={() =>{
+            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" onClick={() =>{
          data.st=("Beaches");
         }}>
-            <img src="/img/beach.png" className="rounded-circle img-fluid category-img" alt="Beaches" />
+            <img src={beach} className="rounded-circle img-fluid category-img" alt="Beaches" />
             Beaches</Link></li>
 
-            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" href="#"  onClick={() =>{
+            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" onClick={() =>{
          data.st=("HillStation");
         }}>
-            <img src="/img/mountains.png" className="rounded-circle img-fluid category-img" alt="Hill Station" /> 
+            <img src={hillStation} className="rounded-circle img-fluid category-img" alt="Hill Station" /> 
             Hill Station</Link></li>
 
-            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" href="#"  onClick={() =>{
+            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" onClick={() =>{
          data.st=("Island");
         }}>
-            <img src="/img/island.png" className="rounded-circle img-fluid category-img" alt="Island" />
+            <img src={island} className="rounded-circle img-fluid category-img" alt="Island" />
             Island</Link></li>
 
-            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" href="#"  onClick={() =>{
+            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" onClick={() =>{
          data.st=("city");
         }}>
-            <img src="/img/city.png" className="rounded-circle img-fluid category-img" alt="Mega cities" /> 
+            <img src={city} className="rounded-circle img-fluid category-img" alt="Mega cities" /> 
             Mega cities</Link></li>
 
-            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" href="#"  onClick={() =>{
+            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" onClick={() =>{
          data.st=("Ancient");
         }}>
-            <img src="/img/ancient.png" className="rounded-circle img-fluid category-img" alt="Ancient and Historical" /> 
+            <img src={ancient} className="rounded-circle img-fluid category-img" alt="Ancient and Historical" /> 
             Ancient and Historical</Link></li>
 
-            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" href="#"  onClick={() =>{
+            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" onClick={() =>{
          data.st=("Religious");
         }}>
-            <img src="/img/religious.png" className="rounded-circle img-fluid category-img" alt="Religious Sites" />  
+            <img src={religious} className="rounded-circle img-fluid category-img" alt="Religious Sites" />  
             Religious Sites</Link></li>
 
-            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" href="#"  onClick={() =>{
+            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" onClick={() =>{
          data.st=("Deserts");
         }}>
-            <img src="/img/desert.png" className="rounded-circle img-fluid category-img" alt="Deserts" />
+            <img src={deserts} className="rounded-circle img-fluid category-img" alt="Deserts" />
             Deserts</Link></li>
 
-            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" href="#"  onClick={() =>{
+            <li><Link to="/searchResult" state={data} className="dropdown-item fw-bold" onClick={() =>{
          data.st=("Snow");
         }}>
-            <img src="/img/snowman.png" className="rounded-circle img-fluid category-img" alt="Snow and Ice" />
+            <img src={snow} className="rounded-circle img-fluid category-img" alt="Snow and Ice" />
             Snow and Ice</Link></li>
            
             <li><hr className="dropdown-divider" /></li>

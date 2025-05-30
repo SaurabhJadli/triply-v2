@@ -1,6 +1,7 @@
-import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import React from "react"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import contact from '../assets/connect.png'
 
 export default function Contact() {
     return(
@@ -10,7 +11,7 @@ export default function Contact() {
               <div style={styles.container}>
               <div className="bg-primary-subtle rounded p-3">
               <h1>Explore the World with Triply</h1>
-              <img src="/img/connect.png" className="img-fluid rounded" alt="road from forest"></img>
+              <img src={contact} className="img-fluid rounded" alt="road from forest"></img>
 <br /><br />
                 <h3>Discover new travel destinations, plan your next adventure, and connect with fellow explorers.</h3>
               </div>
@@ -20,7 +21,7 @@ export default function Contact() {
 
               <ul className="navbar-nav">
                 <li className="m-4">
-                <img src="/img/contact.png" className="rounded-circle img-fluid category-img" alt="national_park" />
+                <img src={contact} className="rounded-circle img-fluid category-img" alt="national_park" />
 
                     <h3>
                     Phone</h3>

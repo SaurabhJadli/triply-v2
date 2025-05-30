@@ -63,8 +63,10 @@ export default function LogIn() {
                         type="submit"
                         className='w-100 mb-2'
                         variant="contained">
-                        <Link to="#" 
-                        className='submitBtn'>
+                        <Link 
+                        to="#" 
+                        className='text-decoration-none text-white'
+                        >
                         Log in
                         </Link>
                     </Button>
